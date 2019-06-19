@@ -2,13 +2,35 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <title>OCR Translate App</title>
+    <title>TOP - OCR Translate App</title>
+
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/stylesheets/common.css">
+    <link rel="stylesheet" href="/assets/stylesheets/index.css">
 
     <script src="/socket.io/socket.io.js"></script>
-    <script src="/assets/scripts/main.js"></script>
+    <!-- <script src="/assets/scripts/main.js"></script> -->
 </head>
 <body>
+    <header class="header">
+        <!-- あとでいい感じのロゴを作る -->
+        <h1>OCR Translate App</h1>
+    </header>
 
+    <main class="main">
+        <div class="split-wrapper camera">
+            <a href="/app/camera">
+                <span>Camera</span>
+            </a>
+        </div>
+
+        <div class="split-wrapper translate">
+            <a href="/app/translate">
+                <span>OCR Translate</span>
+            </a>
+        </div>
+    </main>
 </body>
 </html>

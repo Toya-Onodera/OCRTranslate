@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/***** reset *****/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #5e5e5e;
+    font: 400 87.5% / 1.5em "M PLUS 1p", sans-serif;
+    line-height: 2.0;
+    background-color: #FAFAFA;
+}
+
+ul li, ol li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

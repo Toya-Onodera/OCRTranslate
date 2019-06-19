@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/***** header contents *****/
+.header {
+    height: 60px;
+    padding-left: 16px;
+    font-weight: 900;
+    line-height: 60px;
+    background-color: #FFFFFF;
+    color: #0FACF3;
+    border-bottom: 1px solid #E6E9EB;
+}
+
+/***** main contents *****/
+.main {
+    height: calc(100vh - 60px);
+    display: flex;
+}
+
+.split-wrapper {
+    flex: 1;
+    color: #FFFFFF;
+}
+
+.split-wrapper > a {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.split-wrapper > a::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+.split-wrapper > a:hover::before {
+    position: absolute;
+    content: "";
+    height: 30vw;
+    width: 30vw;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: rotate(90deg);
+}
+
+.split-wrapper > a > span {
+    z-index: 10;
+}
+
+.camera {
+    /* 適当な色を入れておく */
+    background-color: #357266;
+}
+
+.translate {
+    /* 適当な色を入れておく */
+    background-color: #a30b37;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+}
